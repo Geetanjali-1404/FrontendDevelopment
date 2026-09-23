@@ -1690,7 +1690,7 @@ function ContactPage() {
               ]),
               React.createElement("div", { className: "faq-answer" },
                 React.createElement("p", null, faq.answer)
-              ])
+              )
             ])
           )
         )
