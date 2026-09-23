@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GOBEYOND TRAVELS — Untold Indian Cultural & Heritage Gems</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D9534F' stroke-width='2'><circle cx='12' cy='12' r='10'/><polygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/></svg>" />
+
+  <!-- Google Fonts: Cinzel, Outfit, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Site Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div class="brand-name">
+          <span class="brand-title">GOBEYOND <span>TRAVELS</span></span>
+          <span class="brand-tagline">Untold Cultural & Heritage Gems</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="destinations.html#cities" class="nav-link">Cities</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="become-guide.html" class="btn btn-outline btn-sm">Become a Local Guide</a>
+        <a href="auth.html" class="btn btn-primary btn-sm nav-auth-btn">Sign In / Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span>🧭</span> Certified Native Guides • Zero Mass Tourism
+      </div>
+      <h1 class="hero-title">Discover Untold Stories with <span>Local Eyes</span></h1>
+      <p class="hero-subtitle">
+        Step away from overcrowded tourist traps. Immerse yourself in 4,000-year-old tribal bronze guilds, Himalayan mud monasteries, and living river islands with native custodians.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero Multi-Filter Search Bar -->
+  <div class="container search-strip-wrap">
+    <form class="search-box" id="hero-search-form">
+      <div class="search-item">
+        <label class="search-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          Heritage Hub (City)
+        </label>
+        <select class="search-input" id="search-city">
+          <option value="">All Indian Heritage Hubs</option>
+          <option value="jagdalpur">Jagdalpur (Chhattisgarh)</option>
+          <option value="majuli">Majuli Island (Assam)</option>
+          <option value="hampi">Hampi / Anegundi (Karnataka)</option>
+          <option value="kaza">Spiti Valley (Himachal)</option>
+          <option value="karaikudi">Chettinad / Karaikudi (Tamil Nadu)</option>
+          <option value="orchha">Orchha (Madhya Pradesh)</option>
+          <option value="nawalgarh">Shekhawati (Rajasthan)</option>
+          <option value="varanasi">Northern Varanasi (Uttar Pradesh)</option>
+        </select>
+      </div>
+
+      <div class="search-divider"></div>
+
+      <div class="search-item">
+        <label class="search-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/></svg>
+          Cultural Interest
+        </label>
+        <select class="search-input" id="search-category">
+          <option value="">All Cultural Niches</option>
+          <option value="Tribal Traditions">Tribal Traditions & Metallurgy</option>
+          <option value="Sacred Rituals">Sacred Rituals & Monasteries</option>
+          <option value="Ancient Architecture">Ancient Boulder Architecture</option>
+          <option value="Culinary Heritage">Culinary Heritage & Spice Lore</option>
+          <option value="Folk Crafts">Folk Crafts & Living Arts</option>
+        </select>
+      </div>
+
+      <div class="search-divider"></div>
+
+      <div class="search-item">
+        <label class="search-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          Travel Date
+        </label>
+        <input type="date" class="search-input" id="search-date" />
+      </div>
+
+      <div class="search-divider"></div>
+
+      <div class="search-item">
+        <label class="search-label">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Group Size
+        </label>
+        <select class="search-input" id="search-size">
+          <option value="solo">Solo Traveler</option>
+          <option value="couple" selected>Couple (2 Guests)</option>
+          <option value="small-group">Small Circle (3-6 Guests)</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg" id="btn-hero-search">
+        Explore Hidden Gems
+      </button>
+    </form>
+  </div>
+
+  <!-- Live Platform Impact Stats -->
+  <section class="stats-strip">
+    <div class="container stats-grid">
+      <div>
+        <div class="stat-num">85%</div>
+        <div class="stat-label">Direct Revenue to Native Guides</div>
+      </div>
+      <div>
+        <div class="stat-num">12+</div>
+        <div class="stat-label">Off-Beat Indian Regions</div>
+      </div>
+      <div>
+        <div class="stat-num">&lt;25%</div>
+        <div class="stat-label">Crowd Density Index Guarantee</div>
+      </div>
+      <div>
+        <div class="stat-num">4.98★</div>
+        <div class="stat-label">Verified Traveler Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition: GoBeyond vs Tourist Traps -->
+  <section class="section comparison-section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">The GoBeyond Difference</span>
+        <h2 class="section-title">Unique Local Immersion vs Overcrowded Tourist Traps</h2>
+        <p class="section-subtitle">
+          Commercial mass tourism funnels thousands into the same commercialized spots while ignoring living heritage. See why conscious explorers choose GoBeyond.
+        </p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Mass Tourism Card -->
+        <div class="comp-card comp-card-trap">
+          <div class="comp-header">
+            <div class="comp-icon">✕</div>
+            <div>
+              <h3 style="font-size:1.3rem; margin-bottom:2px;">Overcrowded Tourist Traps</h3>
+              <span style="font-size:0.8rem; color:#E53E3E; font-weight:700;">COMMERCIAL MASS TOURISM</span>
+            </div>
+          </div>
+          <ul class="comp-list">
+            <li>
+              <span class="comp-mark-bad">✕</span>
+              <span><strong>Hour-long queues & shoulder-to-shoulder crowds</strong> with zero tranquility or spiritual space.</span>
+            </li>
+            <li>
+              <span class="comp-mark-bad">✕</span>
+              <span><strong>Commercial touts & souvenir markups</strong> where middlemen pocket 70% of traveler fees.</span>
+            </li>
+            <li>
+              <span class="comp-mark-bad">✕</span>
+              <span><strong>Rushed scripted tours</strong> reading verbatim from Wikipedia without ancestral oral connection.</span>
+            </li>
+            <li>
+              <span class="comp-mark-bad">✕</span>
+              <span><strong>Ecological strain & single-use plastic waste</strong> dumped on fragile heritage grounds.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- GoBeyond Travels Card -->
+        <div class="comp-card comp-card-beyond">
+          <div class="comp-header">
+            <div class="comp-icon">✓</div>
+            <div>
+              <h3 style="font-size:1.3rem; margin-bottom:2px;">GoBeyond Heritage Journeys</h3>
+              <span style="font-size:0.8rem; color:var(--terracotta); font-weight:700;">CONSCIOUS LOCAL EXPLORATION</span>
+            </div>
+          </div>
+          <ul class="comp-list">
+            <li>
+              <span class="comp-mark-good">✓</span>
+              <span><strong>Live Crowd Meter Indicator</strong> ensuring peaceful access (under 25% footfall density).</span>
+            </li>
+            <li>
+              <span class="comp-mark-good">✓</span>
+              <span><strong>85% direct wage share to native guides & artisan families</strong>, strengthening indigenous craft guilds.</span>
+            </li>
+            <li>
+              <span class="comp-mark-good">✓</span>
+              <span><strong>Hereditary historians, monks, and master sculptors</strong> opening private family courtyards.</span>
+            </li>
+            <li>
+              <span class="comp-mark-good">✓</span>
+              <span><strong>Strictly capped micro-groups (max 6-8 travelers)</strong> respecting village customs and zero-waste ethics.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Destinations with Live Crowd Meter -->
+  <section class="section">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:40px; flex-wrap:wrap; gap:16px;">
+        <div>
+          <span class="section-tag">Quiet Heritage Centers</span>
+          <h2 class="section-title" style="margin-bottom:0;">Featured Destinations & Off-Beat Tours</h2>
+        </div>
+        <a href="destinations.html" class="btn btn-outline">View All 12 Heritage Sites →</a>
+      </div>
+
+      <!-- Destinations Grid populated by home.js -->
+      <div class="card-grid" id="featured-destinations-grid"></div>
+    </div>
+  </section>
+
+  <!-- Local Guide Spotlight -->
+  <section class="section" style="background:var(--warm-sand);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Native Storytellers & Guild Masters</span>
+        <h2 class="section-title">Explore with Certified Local Custodians</h2>
+        <p class="section-subtitle">
+          Our guides are not commercial freelancers. They are archaeologists, Buddhist scholars, 7th-generation metal casters, and village elders who breathe life into forgotten stones.
+        </p>
+      </div>
+
+      <!-- Guides Grid populated by home.js -->
+      <div class="card-grid-4" id="featured-guides-grid"></div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="become-guide.html" class="btn btn-primary">Join Our Heritage Guide Guild →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Traveler Reviews Preview -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Community Reflections</span>
+        <h2 class="section-title">Stories from Conscious Travelers</h2>
+        <p class="section-subtitle">
+          Real feedback from verified travelers who chose serenity and cultural depth over crowded tourist spots.
+        </p>
+      </div>
+
+      <!-- Reviews Grid populated by home.js -->
+      <div class="card-grid" id="home-reviews-grid"></div>
+
+      <div style="text-align:center; margin-top:36px;">
+        <a href="reviews.html" class="btn btn-outline">Read All Community Stories & Submit Review →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section style="background:linear-gradient(135deg, #0A4D68 0%, #D9534F 100%); color:#fff; padding:70px 0;">
+    <div class="container" style="text-align:center; max-width:760px;">
+      <h2 style="font-size:2.4rem; color:#fff; margin-bottom:16px;">Ready to Experience Untold India?</h2>
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.9); margin-bottom:30px; line-height:1.6;">
+        Choose your starting city, check the live crowd meter, and connect with a certified local guide for an unforgettable cultural journey.
+      </p>
+      <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+        <a href="destinations.html" class="btn btn-secondary btn-lg">Explore Indian Destinations</a>
+        <a href="become-guide.html" class="btn btn-outline-white btn-lg">Register as Local Guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <div class="brand-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color:#fff;">GOBEYOND <span style="color:var(--mustard);">TRAVELS</span></span>
+              <span class="brand-tagline" style="color:#94A3B8;">Cultural & Heritage Custodians</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem; color:#94A3B8; line-height:1.6; margin-bottom:20px;">
+            Connecting travelers directly with indigenous historians, artisans, and family homestays to preserve authentic Indian heritage and avoid over-tourism.
+          </p>
+          <div style="font-size:0.82rem; color:var(--mustard); font-weight:700;">
+            🌿 85% Direct Artisan Revenue • 100% Zero-Commission Travel
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Indian Heritage Sites</a></li>
+            <li><a href="destinations.html#cities">Indian Gateway Hubs</a></li>
+            <li><a href="packages.html">Heritage Tour Packages</a></li>
+            <li><a href="about.html">Our Preservation Mission</a></li>
+            <li><a href="reviews.html">Verified Traveler Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>For Guides</h4>
+          <ul class="footer-links">
+            <li><a href="become-guide.html">Join as Local Guide</a></li>
+            <li><a href="become-guide.html#benefits">Guide Fair Wages</a></li>
+            <li><a href="become-guide.html#verification">Verification Charter</a></li>
+            <li><a href="contact.html#faq">Guide Support FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Heritage Concierge</h4>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:12px;">
+            Have questions about custom off-beat itineraries or road connectivity?
+          </p>
+          <p style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:6px;">
+            📞 +91 98765 43210
+          </p>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:14px;">
+            ✉️ namaste@gobeyondtravels.in
+          </p>
+          <div style="display:flex; gap:8px;">
+            <a href="contact.html" class="btn btn-outline btn-sm" style="border-color:#64748B; color:#CBD5E1;">Contact Team</a>
+            <a href="auth.html" class="btn btn-sm btn-primary">Sign In</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GOBEYOND TRAVELS India Pvt. Ltd. Dedicated to indigenous heritage preservation.</div>
+        <div style="display:flex; gap:18px;">
+          <a href="about.html#ethics">Ethical Travel Charter</a>
+          <a href="contact.html#faq">FAQ</a>
+          <a href="contact.html">Privacy & Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>

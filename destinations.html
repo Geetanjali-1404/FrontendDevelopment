@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Cities & Destination Explorer — Live Crowd Meter | GOBEYOND TRAVELS</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D9534F' stroke-width='2'><circle cx='12' cy='12' r='10'/><polygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div class="brand-name">
+          <span class="brand-title">GOBEYOND <span>TRAVELS</span></span>
+          <span class="brand-tagline">Untold Cultural & Heritage Gems</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="destinations.html#cities" class="nav-link active">Cities</a></li>
+          <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+          <li><a href="packages.html" class="nav-link">Packages</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="become-guide.html" class="btn btn-outline btn-sm">Become a Local Guide</a>
+        <a href="auth.html" class="btn btn-primary btn-sm nav-auth-btn">Sign In / Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section style="background:linear-gradient(135deg, rgba(10,77,104,0.92) 0%, rgba(217,83,79,0.85) 100%), url('assets/images/heroes/dest-hero.jpg') center/cover no-repeat; padding:65px 0; color:#fff;">
+    <div class="container" style="text-align:center; max-width:850px;">
+      <span class="hero-badge">Exclusively Indian Heritage • Live Footfall Tracking</span>
+      <h1 style="font-size:3rem; color:#fff; margin-bottom:14px;">Indian Cities & Heritage Explorer</h1>
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.9); line-height:1.6; margin-bottom:20px;">
+        Filter by starting Indian city, inspect live crowd density, navigate road and flight routes, and connect with hereditary custodians across 12 authentic heritage zones.
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 1: Indian City Selector (Anchor #cities) -->
+  <section class="section" id="cities" style="padding:40px 0 20px 0; background:var(--warm-sand); border-bottom:1px solid var(--border-light);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; flex-wrap:wrap; gap:10px;">
+        <div>
+          <span style="font-family:var(--font-accent); font-size:0.78rem; font-weight:700; text-transform:uppercase; color:var(--terracotta); letter-spacing:0.06em;">Gateway Region Selector</span>
+          <h2 style="font-size:1.6rem; margin:2px 0 0 0;">Select Your Starting Indian City or Heritage Region</h2>
+        </div>
+        <span style="font-size:0.85rem; color:var(--slate);">Exclusively authentic Indian heritage regions</span>
+      </div>
+
+      <!-- City Pills rendered dynamically by destinations.js -->
+      <div class="filter-pills-wrap" id="city-pills-container"></div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive Cultural Map & Transport Hubs -->
+  <section class="section" style="padding:40px 0;">
+    <div class="container">
+      <div class="section-title-wrap" style="margin-bottom:28px;">
+        <span class="section-tag">Interactive Cultural Map</span>
+        <h2 class="section-title">Heritage Sites & Major Transport Hubs</h2>
+        <p class="section-subtitle">
+          Pinpointing hidden sanctuaries relative to regional airports (✈️), scenic railways (🚆), and national highway road corridors.
+        </p>
+      </div>
+
+      <div class="cultural-map-container" id="cultural-map-box">
+        <div class="map-toolbar">
+          <div style="display:flex; align-items:center; gap:16px; flex-wrap:wrap;">
+            <span style="font-weight:700; font-size:0.88rem; color:var(--charcoal);">Legend:</span>
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem;">
+              <span style="width:10px; height:10px; border-radius:50%; background:#10B981; display:inline-block;"></span> Quiet Heritage Site
+            </span>
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem;">
+              <span style="width:10px; height:10px; border-radius:50%; background:#F59E0B; display:inline-block;"></span> Moderate Activity
+            </span>
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:0.82rem;">
+              <span style="width:10px; height:10px; border-radius:50%; background:#0A4D68; display:inline-block;"></span> Transport Hub (Airport / Rail)
+            </span>
+          </div>
+          <div style="font-size:0.82rem; color:var(--muted); font-style:italic;">
+            Click any pin on the map to inspect connectivity and route guide
+          </div>
+        </div>
+
+        <div class="map-visual-container">
+          <!-- Stylized SVG Map of India -->
+          <svg class="map-svg-art" viewBox="0 0 1000 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stylized Indian Subcontinent Outline Silhouette -->
+            <path d="M 340 50 Q 370 40 400 60 Q 450 110 500 130 Q 560 140 650 180 Q 750 180 820 160 Q 880 180 890 230 Q 860 270 810 270 Q 760 290 730 330 Q 640 330 600 370 Q 570 420 540 460 Q 500 520 460 560 Q 420 510 390 440 Q 350 380 300 340 Q 250 320 220 270 Q 200 220 230 170 Q 270 140 300 110 Z" 
+                  fill="#16384C" stroke="#2A5C78" stroke-width="2" opacity="0.85" />
+            
+            <!-- Interior Regional Grid Lines -->
+            <path d="M 250 250 Q 450 300 700 250 M 350 150 Q 450 350 480 520" stroke="rgba(255,255,255,0.06)" stroke-width="1.5" stroke-dasharray="6,6" />
+
+            <!-- Group containing interactive pins and lines rendered by JS -->
+            <g id="map-svg-elements"></g>
+          </svg>
+
+          <!-- Interactive Drawer Popup on Map -->
+          <div class="map-card-popup" id="map-popup-drawer" style="display:none;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Filter Controls & Destination Cards Grid -->
+  <section class="section" style="padding-top:20px;">
+    <div class="container">
+      <div style="background:var(--white); border-radius:var(--radius-xl); padding:24px; border:1px solid var(--border-card); margin-bottom:34px; box-shadow:var(--shadow-sm);">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:18px;">
+          <!-- Search input -->
+          <div style="flex:1; min-width:280px; position:relative;">
+            <input type="text" class="form-control" id="destination-search-input" placeholder="🔍 Search by monument, artisan guild, river, or state..." style="padding-left:16px;" />
+          </div>
+          <div id="destinations-count" style="font-weight:700; color:var(--slate); font-size:0.9rem;">
+            Loading Indian Heritage Sites...
+          </div>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:20px; align-items:center; justify-content:space-between; border-top:1px solid var(--border-light); padding-top:16px;">
+          <!-- Crowd Density Filter -->
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-family:var(--font-accent); font-weight:700; font-size:0.8rem; text-transform:uppercase; color:var(--muted);">Crowd Meter:</span>
+            <button class="filter-pill crowd-filter-btn active" data-crowd="all">All Densities</button>
+            <button class="filter-pill crowd-filter-btn" data-crowd="peaceful">🟢 Quiet & Peaceful (&lt;25%)</button>
+            <button class="filter-pill crowd-filter-btn" data-crowd="moderate">🟡 Moderate (26–60%)</button>
+          </div>
+
+          <!-- Cultural Category Filter -->
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-family:var(--font-accent); font-weight:700; font-size:0.8rem; text-transform:uppercase; color:var(--muted);">Heritage Theme:</span>
+            <button class="filter-pill filter-pill-teal category-filter-btn active" data-category="all">All</button>
+            <button class="filter-pill filter-pill-teal category-filter-btn" data-category="Ancient Architecture">Architecture</button>
+            <button class="filter-pill filter-pill-teal category-filter-btn" data-category="Tribal Traditions">Tribal Arts</button>
+            <button class="filter-pill filter-pill-teal category-filter-btn" data-category="Sacred Rituals">Sacred Lore</button>
+            <button class="filter-pill filter-pill-teal category-filter-btn" data-category="Culinary Heritage">Culinary Lore</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Destination Cards Grid -->
+      <div class="card-grid" id="destinations-cards-grid"></div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <div class="brand-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color:#fff;">GOBEYOND <span style="color:var(--mustard);">TRAVELS</span></span>
+              <span class="brand-tagline" style="color:#94A3B8;">Cultural & Heritage Custodians</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem; color:#94A3B8; line-height:1.6; margin-bottom:20px;">
+            Connecting travelers directly with indigenous historians, artisans, and family homestays to preserve authentic Indian heritage and avoid over-tourism.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Indian Heritage Sites</a></li>
+            <li><a href="destinations.html#cities">Indian Gateway Hubs</a></li>
+            <li><a href="packages.html">Heritage Tour Packages</a></li>
+            <li><a href="about.html">Our Preservation Mission</a></li>
+            <li><a href="reviews.html">Verified Traveler Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>For Guides</h4>
+          <ul class="footer-links">
+            <li><a href="become-guide.html">Join as Local Guide</a></li>
+            <li><a href="become-guide.html#benefits">Guide Fair Wages</a></li>
+            <li><a href="become-guide.html#verification">Verification Charter</a></li>
+            <li><a href="contact.html#faq">Guide Support FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Heritage Concierge</h4>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:12px;">Need custom road transfer or scenic train advice?</p>
+          <p style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:6px;">📞 +91 98765 43210</p>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:14px;">✉️ namaste@gobeyondtravels.in</p>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="border-color:#64748B; color:#CBD5E1;">Contact Team</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GOBEYOND TRAVELS India Pvt. Ltd. Dedicated to indigenous heritage preservation.</div>
+        <div style="display:flex; gap:18px;">
+          <a href="about.html#ethics">Ethical Travel Charter</a>
+          <a href="contact.html#faq">FAQ</a>
+          <a href="contact.html">Privacy & Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/destinations.js"></script>
+</body>
+</html>

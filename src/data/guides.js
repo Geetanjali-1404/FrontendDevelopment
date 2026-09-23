@@ -1,0 +1,140 @@
+export const guidesData = [
+  {
+    id: 'guide-rameshwar',
+    name: 'Rameshwar Rao',
+    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80',
+    role: 'Living Vijayanagara Historian & Coracle Master',
+    location: 'Anegundi & Hampi, Karnataka',
+    rating: 4.98,
+    reviewsCount: 142,
+    experienceYears: 14,
+    languages: ['Kannada', 'Hindi', 'English', 'Telugu'],
+    badges: ['ASI Certified Historian', 'Master Storyteller', 'Native Anegundi Custodian'],
+    bio: 'Born in the ancient riverside village of Anegundi, Rameshwar has spent 14 years documenting pre-Vijayanagara rock engravings and oral myths. He believes in showing travelers the silent, living soul of the boulders rather than just crowded monument queues.',
+    hourlyRateINR: 650,
+    toursLed: 380,
+    specialties: ['Mythological Kishkindha Lore', 'Rock Art & Epigraphy', 'Coracle River Navigation', 'Rural Village Traditions'],
+    videoIntro: {
+      title: 'Namaskara from the Sacred Boulders of Anegundi',
+      duration: '1:45',
+      thumbnail: 'https://images.unsplash.com/photo-1600100397608-f010f443b715?auto=format&fit=crop&w=800&q=80',
+      quote: "When you stand on these granite hills at dawn, you are not looking at ruins. You are listening to a 1,000-year hymn that never truly stopped.",
+      transcript: "Hello fellow travelers! I am Rameshwar Rao. I was born in Anegundi, just across the river from Hampi. Most travelers only see the crowded stone chariot. With me, we take a quiet coracle boat at sunrise, drink fresh spiced buttermilk with our local farmers, and explore secret 11th-century shrines where the priests still chant without a single loudspeaker. Welcome to my home!"
+    }
+  },
+  {
+    id: 'guide-meenakshi',
+    name: 'Meenakshi Sundaram',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+    role: 'Chettiar Architectural Custodian & Culinary Historian',
+    location: 'Kanadukathan & Karaikudi, Tamil Nadu',
+    rating: 4.99,
+    reviewsCount: 118,
+    experienceYears: 11,
+    languages: ['Tamil', 'English', 'French'],
+    badges: ['State Heritage Fellow', 'Culinary Lineage Custodian', 'Top Rated 2025'],
+    bio: 'Daughter of an Athangudi tile-making family, Meenakshi studied Dravidian architecture before returning to preserve Chettinad’s endangered mansions. She leads intimate walks through private family palazzos and explains the centuries of global maritime trade that financed them.',
+    hourlyRateINR: 800,
+    toursLed: 295,
+    specialties: ['Mansion Architecture', 'Athangudi Tile Casting', 'Heirloom Chettinad Gastronomy', 'Antique Bazaars'],
+    videoIntro: {
+      title: 'Vanakkam! The Spices and Mansions of Chettinad',
+      duration: '1:30',
+      thumbnail: 'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80',
+      quote: "Every teak pillar in our homes sailed across the Bay of Bengal from Burma in the 1880s. Let us open their doors together.",
+      transcript: "Vanakkam! I am Meenakshi Sundaram. Chettinad is not a typical tourist town; it is a living museum of 75 quiet heritage villages. When you travel with me, we visit mansions whose owners have entrusted me with their brass keys. We watch Athangudi artisans hand-pour stained glass tiles using techniques passed down for five generations, and taste peppery gravies slow-cooked over wood fire."
+    }
+  },
+  {
+    id: 'guide-bipul',
+    name: 'Bipul Saikia',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    role: 'Master Mask Sculptor & Neo-Vaishnavite Folklorist',
+    location: 'Majuli Island, Assam',
+    rating: 4.96,
+    reviewsCount: 89,
+    experienceYears: 9,
+    languages: ['Assamese', 'Hindi', 'Bengali', 'English'],
+    badges: ['Sangeet Natak Honoree', 'Indigenous Craft Mentor', 'Island Native'],
+    bio: 'Bipul is a 4th-generation bamboo mask artisan from Chamaguri Satra. He teaches travelers the spiritual and theatrical symbolism of Assamese Bhaona masks and shares the philosophical tranquility of life on the Brahmaputra.',
+    hourlyRateINR: 600,
+    toursLed: 210,
+    specialties: ['Chamaguri Traditional Mask Craft', 'Sattriya Monastic Culture', 'Mishing Tribal Weaving', 'Brahmaputra Ecology'],
+    videoIntro: {
+      title: 'Pranam from the River Island of Majuli',
+      duration: '2:10',
+      thumbnail: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+      quote: "Our masks are not made of plastic or resin; they are sculpted from riverside bamboo, clay, and cowdung, breathing with sacred life.",
+      transcript: "Pranam! I am Bipul from Majuli Island. Out here in the middle of the Brahmaputra, time moves to the rhythm of the monsoons and morning cymbals. I will teach you to mold organic bamboo into dramatic masks depicting Ravana and Garuda, take you to meet the Mishing tribal weavers, and share stories around a fresh cup of organic Assam CTC tea."
+    }
+  },
+  {
+    id: 'guide-tenzin',
+    name: 'Tenzin Norbu',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    role: 'High Himalayan Monastic Scholar & Geologist',
+    location: 'Dhankar & Kaza, Spiti, Himachal Pradesh',
+    rating: 4.99,
+    reviewsCount: 104,
+    experienceYears: 8,
+    languages: ['Spitian', 'Tibetan', 'Hindi', 'English'],
+    badges: ['High Altitude Certified', 'Preservation Scholar', 'Native Spitian'],
+    bio: 'Tenzin was raised in the cliff village of Dhankar. After studying Buddhist philosophy and Himalayan geology in Dharamshala, he returned to guide mindful travelers through 1,000-year-old mud monasteries and sustainable high-altitude farming traditions.',
+    hourlyRateINR: 900,
+    toursLed: 195,
+    specialties: ['11th Century Tibetan Murals', 'Spiti High-Altitude Acclimatization', 'Fossil Valley Geology', 'Spitian Mud Architecture'],
+    videoIntro: {
+      title: 'Julley from the Cliff Monastery of Dhankar',
+      duration: '1:50',
+      thumbnail: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80',
+      quote: "In Spiti, the silence is so deep you can hear your own heartbeat against the snow peaks. Respect the altitude, and the mountain welcomes you.",
+      transcript: "Julley! I am Tenzin Norbu. Up here at nearly 4,000 meters, our ancestors carved cliffside sanctuaries that have sheltered spiritual seekers for ten centuries. When you come with me, we stay in solar-heated local mud homes, drink warm sea buckthorn and butter tea, and sit in meditation chambers untouched by modern crowds."
+    }
+  },
+  {
+    id: 'guide-ananya',
+    name: 'Ananya Mukherjee',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    role: 'Malla Terracotta Archaeologist & Textile Historian',
+    location: 'Bishnupur & Patan, West Bengal / Gujarat',
+    rating: 4.95,
+    reviewsCount: 96,
+    experienceYears: 12,
+    languages: ['Bengali', 'Hindi', 'English'],
+    badges: ['ASI Research Contributor', 'Textile Guild Liaison', 'Cultural Ethicist'],
+    bio: 'Ananya is an archaeologist specializing in medieval Indian brick temples and ancient silk looms. She deciphers the miniature terracotta panels of Bishnupur and introduces travelers directly to the master weavers of the endangered Baluchari and Patola lineages.',
+    hourlyRateINR: 750,
+    toursLed: 260,
+    specialties: ['Burnt Brick Temple Architecture', 'Baluchari Jacquard Epics', 'Terracotta Restoration', 'Bishnupur Classical Gharana'],
+    videoIntro: {
+      title: 'Nomoshkar! Stories Baked in Clay and Spun in Silk',
+      duration: '1:40',
+      thumbnail: 'https://images.unsplash.com/photo-1599831104321-72944b2663c6?auto=format&fit=crop&w=800&q=80',
+      quote: "Every terracotta tile on these 400-year-old temples tells a tale of devotion, battle, and everyday life in Bengal.",
+      transcript: "Nomoshkar! I am Ananya. In Bishnupur, our ancestors had no granite or marble, so they took alluvial clay from the river, sculpted the entire Ramayana into miniature panels, and fired them in kilns. Join me to walk through these terracotta jewels and sit beside master silk weavers who preserve India’s greatest storytelling textiles."
+    }
+  },
+  {
+    id: 'guide-raghuveer',
+    name: 'Pandit Raghuveer Bundela',
+    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+    role: 'Bundelkhand Ballad Singer & Fresco Conservator',
+    location: 'Orchha & Shekhawati, MP / Rajasthan',
+    rating: 4.97,
+    reviewsCount: 135,
+    experienceYears: 16,
+    languages: ['Hindi', 'Bundeli', 'Marwari', 'English'],
+    badges: ['Bundelkhand Folklore Custodian', 'Master Folk Musician', '16+ Years Experience'],
+    bio: 'A descendant of court chroniclers, Pandit Raghuveer narrates the valor, romance, and spiritual songs of Bundelkhand while pointing out the hidden, unfaded Mughal-Rajput frescoes tucked away in palace attics and secluded desert havelis.',
+    hourlyRateINR: 700,
+    toursLed: 410,
+    specialties: ['Medieval Palace Murals', 'Oral Folk Ballads', 'Betwa River Cenotaph Sunset', 'Chanderi Handloom Guilds'],
+    videoIntro: {
+      title: 'Ram Ram! Whispers of Bundelkhand Palaces',
+      duration: '2:00',
+      thumbnail: 'https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=80',
+      quote: "Orchha is the only place in India where Lord Rama is revered not just as a deity, but as the reigning king of the realm.",
+      transcript: "Ram Ram! I am Raghuveer Bundela. While thousands flock to crowded palaces in Rajasthan, Orchha sits undisturbed on the banks of the Betwa. I will lead you through secret palace corridors where the original 400-year-old frescoes still gleam in vegetable lapis lazuli and gold, followed by an evening boat ride beneath the royal cenotaphs."
+    }
+  }
+];

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curated Heritage Packages & Booking | GOBEYOND TRAVELS</title>
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D9534F' stroke-width='2'><circle cx='12' cy='12' r='10'/><polygon points='16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Outfit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+        </div>
+        <div class="brand-name">
+          <span class="brand-title">GOBEYOND <span>TRAVELS</span></span>
+          <span class="brand-tagline">Untold Cultural & Heritage Gems</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="destinations.html#cities" class="nav-link">Cities</a></li>
+          <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+          <li><a href="packages.html" class="nav-link active">Packages</a></li>
+          <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="become-guide.html" class="btn btn-outline btn-sm">Become a Local Guide</a>
+        <a href="auth.html" class="btn btn-primary btn-sm nav-auth-btn">Sign In / Sign Up</a>
+        <button class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background:linear-gradient(135deg, rgba(10,77,104,0.92) 0%, rgba(217,83,79,0.85) 100%), url('assets/images/heroes/packages-hero.jpg') center/cover no-repeat; padding:65px 0; color:#fff; text-align:center;">
+    <div class="container" style="max-width:820px;">
+      <span class="hero-badge">Transparent Pricing • Certified Native Guides</span>
+      <h1 style="font-size:3rem; color:#fff; margin-bottom:12px;">Curated Heritage Tour Packages</h1>
+      <p style="font-size:1.1rem; color:rgba(255,255,255,0.9); line-height:1.6;">
+        Every package features all-inclusive homestays, village permits, hands-on craft workshops, and direct payments to certified native historians.
+      </p>
+    </div>
+  </section>
+
+  <!-- Transparent Pricing Guarantee Strip -->
+  <div style="background:var(--warm-sand); border-bottom:1px solid var(--border-light); padding:16px 0;">
+    <div class="container" style="display:flex; justify-content:space-around; align-items:center; flex-wrap:wrap; gap:16px; font-size:0.86rem; color:var(--slate);">
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:#10B981; font-weight:bold;">✓</span>
+        <span><strong>No Hidden Fees:</strong> Base Fare + Guide Honorarium + 5% Restoration Pledge</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:#10B981; font-weight:bold;">✓</span>
+        <span><strong>Instant Mock Checkout:</strong> UPI QR, Credit/Debit Cards, Apple Pay</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px;">
+        <span style="color:#10B981; font-weight:bold;">✓</span>
+        <span><strong>Small Groups Only:</strong> Strictly capped at 4–8 conscious travelers</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filters & Packages Grid -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter Bar -->
+      <div style="background:var(--white); border-radius:var(--radius-xl); padding:20px 24px; border:1px solid var(--border-card); margin-bottom:34px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:18px;">
+        <!-- Physical Difficulty Filter -->
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span style="font-family:var(--font-accent); font-weight:700; font-size:0.8rem; text-transform:uppercase; color:var(--muted);">Physical Level:</span>
+          <button class="filter-pill difficulty-filter-btn active" data-difficulty="all">All Levels</button>
+          <button class="filter-pill difficulty-filter-btn" data-difficulty="Easy">🟢 Easy Walks</button>
+          <button class="filter-pill difficulty-filter-btn" data-difficulty="Moderate">🟡 Moderate Trek</button>
+          <button class="filter-pill difficulty-filter-btn" data-difficulty="Challenging">🔴 High Alpine / Challenging</button>
+        </div>
+
+        <!-- Duration Filter -->
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+          <span style="font-family:var(--font-accent); font-weight:700; font-size:0.8rem; text-transform:uppercase; color:var(--muted);">Duration:</span>
+          <button class="filter-pill filter-pill-teal duration-filter-btn active" data-duration="all">All Durations</button>
+          <button class="filter-pill filter-pill-teal duration-filter-btn" data-duration="short">1–2 Days</button>
+          <button class="filter-pill filter-pill-teal duration-filter-btn" data-duration="medium">3–4 Days</button>
+          <button class="filter-pill filter-pill-teal duration-filter-btn" data-duration="long">5+ Days Expedition</button>
+        </div>
+
+        <div id="packages-count" style="font-weight:700; color:var(--slate); font-size:0.88rem;">
+          Loading packages...
+        </div>
+      </div>
+
+      <!-- Packages Grid -->
+      <div class="card-grid" id="packages-grid"></div>
+    </div>
+  </section>
+
+  <!-- Booking Flow Explainer -->
+  <section class="section" style="background:var(--warm-sand);">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Zero Friction</span>
+        <h2 class="section-title">How Booking Works with GoBeyond</h2>
+        <p class="section-subtitle">
+          From selecting your dates to receiving your official guide itinerary on WhatsApp.
+        </p>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:24px;">
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:28px; border:1px solid var(--border-card);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--terracotta-light); color:var(--terracotta); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.1rem; margin-bottom:14px;">1</div>
+          <h4 style="font-size:1.1rem; margin-bottom:8px;">Choose Dates & Travelers</h4>
+          <p style="font-size:0.88rem; color:var(--slate); line-height:1.5;">
+            Select your preferred travel date. Specify your party size (strictly 1 to 8 guests max to ensure cultural intimacy).
+          </p>
+        </div>
+
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:28px; border:1px solid var(--border-card);">
+          <div style="width:40px; height:40px; border-radius:50%; background:var(--mustard-light); color:var(--mustard-dark); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.1rem; margin-bottom:14px;">2</div>
+          <h4 style="font-size:1.1rem; margin-bottom:8px;">Transparent Fare Breakdown</h4>
+          <p style="font-size:0.88rem; color:var(--slate); line-height:1.5;">
+            See exactly how your payment is split: Base package fare, direct native guide honorarium, and 5% community heritage preservation pledge.
+          </p>
+        </div>
+
+        <div style="background:var(--white); border-radius:var(--radius-lg); padding:28px; border:1px solid var(--border-card);">
+          <div style="width:40px; height:40px; border-radius:50%; background:#EBF4F8; color:var(--teal); display:flex; align-items:center; justify-content:center; font-weight:800; font-size:1.1rem; margin-bottom:14px;">3</div>
+          <h4 style="font-size:1.1rem; margin-bottom:8px;">Instant Mock Checkout</h4>
+          <p style="font-size:0.88rem; color:var(--slate); line-height:1.5;">
+            Simulate payment via UPI (GPay/PhonePe QR code), Credit/Debit Card, or Apple Pay. Receive an instant booking reference and printable voucher.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom:16px;">
+            <div class="brand-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <div class="brand-name">
+              <span class="brand-title" style="color:#fff;">GOBEYOND <span style="color:var(--mustard);">TRAVELS</span></span>
+              <span class="brand-tagline" style="color:#94A3B8;">Cultural & Heritage Custodians</span>
+            </div>
+          </div>
+          <p style="font-size:0.88rem; color:#94A3B8; line-height:1.6; margin-bottom:20px;">
+            Connecting travelers directly with indigenous historians, artisans, and family homestays to preserve authentic Indian heritage and avoid over-tourism.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="destinations.html">Indian Heritage Sites</a></li>
+            <li><a href="destinations.html#cities">Indian Gateway Hubs</a></li>
+            <li><a href="packages.html">Heritage Tour Packages</a></li>
+            <li><a href="about.html">Our Preservation Mission</a></li>
+            <li><a href="reviews.html">Verified Traveler Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>For Guides</h4>
+          <ul class="footer-links">
+            <li><a href="become-guide.html">Join as Local Guide</a></li>
+            <li><a href="become-guide.html#benefits">Guide Fair Wages</a></li>
+            <li><a href="become-guide.html#verification">Verification Charter</a></li>
+            <li><a href="contact.html#faq">Guide Support FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Heritage Concierge</h4>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:12px;">Need custom itinerary adjustments or private family group tours?</p>
+          <p style="font-size:0.9rem; color:#fff; font-weight:700; margin-bottom:6px;">📞 +91 98765 43210</p>
+          <p style="font-size:0.86rem; color:#94A3B8; margin-bottom:14px;">✉️ namaste@gobeyondtravels.in</p>
+          <a href="contact.html" class="btn btn-outline btn-sm" style="border-color:#64748B; color:#CBD5E1;">Contact Team</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 GOBEYOND TRAVELS India Pvt. Ltd. Dedicated to indigenous heritage preservation.</div>
+        <div style="display:flex; gap:18px;">
+          <a href="about.html#ethics">Ethical Travel Charter</a>
+          <a href="contact.html#faq">FAQ</a>
+          <a href="contact.html">Privacy & Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/packages.js"></script>
+</body>
+</html>
