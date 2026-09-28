@@ -128,8 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Interactive "Share Your Heritage Story" Modal
   window.openWriteReviewModal = () => {
-    const modalRoot = document.getElementById('modal-root');
-    if (!modalRoot) return;
+    if (window.GoBeyond && window.GoBeyond.ensureContainers) {
+      window.GoBeyond.ensureContainers();
+    }
+    let modalRoot = document.getElementById('modal-root');
+    if (!modalRoot) {
+      modalRoot = document.createElement('div');
+      modalRoot.id = 'modal-root';
+      document.body.appendChild(modalRoot);
+    }
     document.body.style.overflow = 'hidden';
 
     modalRoot.innerHTML = `

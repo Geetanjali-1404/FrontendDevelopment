@@ -160,7 +160,15 @@ document.addEventListener('DOMContentLoaded', () => {
       window.GoBeyond.showToast(`Namaste ${name}! Your application has been submitted to the GoBeyond Heritage Board.`, 'success');
 
       // Success modal feedback
-      const modalRoot = document.getElementById('modal-root');
+      if (window.GoBeyond && window.GoBeyond.ensureContainers) {
+        window.GoBeyond.ensureContainers();
+      }
+      let modalRoot = document.getElementById('modal-root');
+      if (!modalRoot) {
+        modalRoot = document.createElement('div');
+        modalRoot.id = 'modal-root';
+        document.body.appendChild(modalRoot);
+      }
       if (modalRoot) {
         document.body.style.overflow = 'hidden';
         modalRoot.innerHTML = `

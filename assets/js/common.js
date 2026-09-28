@@ -981,6 +981,7 @@
 
   // --- Initialize on DOM Loaded ---
   document.addEventListener('DOMContentLoaded', () => {
+    ensureContainers();
     initNavigation();
   });
 
@@ -1109,6 +1110,7 @@
 
   // --- Export Global Methods ---
   window.GoBeyond = {
+    ensureContainers,
     openGuideModal,
     openRouteGuide,
     openBookingModal,
