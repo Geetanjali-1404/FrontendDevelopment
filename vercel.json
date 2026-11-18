@@ -2,6 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://frontend-project-2-way8.onrender.com/api/:path*"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
